@@ -1,0 +1,20 @@
+{
+  "browser": "Microsoft Edge headless (CDP)",
+  "recordedAt": "2026-10-25T23:17:23.697Z",
+  "results": [
+    "Desktop 1440px: painel carregado, sem transbordamento horizontal.",
+    "Layout 1024px: sem transbordamento horizontal.",
+    "Layout 768px: sem transbordamento horizontal.",
+    "Layout 375px: sem transbordamento horizontal.",
+    "Contraproposta: histórico acessível e aceite do cliente gerou acordo pela interface.",
+    "Documentação: reunião, ficha, upload real e encaminhamento concluídos pela interface.",
+    "Novo atendimento: seleção, solicitação, confirmação, visita e primeira proposta concluídas pela interface.",
+    "Restauração pela interface: cinco cenários recuperados, documentos removidos e backup integral conferido. Ana tem dois aceites na mesma proposta.",
+    "Botões de simulação: aviso real em 02/11, expiração em 03/11, Envio de imóveis e mensagem pendente ao proprietário; acordo de Ana integralmente preservado.",
+    "Repetição em ambas as datas: eventos, notificações, ciclos e atendimentos idênticos; apenas novo log. Dados preservados após recarregar a página.",
+    "Logs exibem condições, horário simulado, registro real, resultado, mudanças e contadores; simulador sem transbordamento em 375 e 1440px.",
+    "Link específico do catálogo local abre apenas o imóvel selecionado.",
+    "Todas as páginas acessíveis; nenhum erro JavaScript no navegador."
+  ],
+  "errors": []
+}

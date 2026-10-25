@@ -1,0 +1,49 @@
+﻿
+> locaflux-case-nia@1.0.0 test
+> node --test
+
+✔ 01 · primeira proposta em 20/10 vence em 03/11, após 14 dias corridos (3.0842ms)
+✔ 02 · aviso exclusivamente no dia 13 e associado ao consultor (6.2884ms)
+✔ 03 · no dia 14, expira sem acordo e gera mensagem pendente ao proprietário (2.0245ms)
+✔ 04 · acordo válido antes do prazo impede expiração e leva à documentação (1.7091ms)
+✔ 05 · contraproposta não herda aceite nem reinicia o prazo (1.2423ms)
+✔ 06 · reexecução não duplica notificações nem eventos de expiração (2.3781ms)
+✔ 07 · novo imóvel recebe ciclo, datas, proposta e aceites independentes (3.0003ms)
+✔ 08 · expiração limpa seleção/visita e permite retomar busca (2.1486ms)
+✔ 09 · histórico preserva proposta original, motivo e data do encerramento (1.8852ms)
+✔ 10 · proposta de outro atendimento/imóvel não pode receber aceite cruzado (1.5334ms)
+✔ aceite antigo explícito é recusado após mudança do valor (1.1847ms)
+✔ aceite e contraproposta no dia limite são recusados, mesmo sem executar robô (0.9574ms)
+✔ repetir aceite do autor não duplica histórico (0.5916ms)
+✔ datas inválidas, retrocesso e avanço parcial não alteram referência (0.8954ms)
+✔ dias corridos invariantes em fusos distintos, incluindo horário de verão (233.9121ms)
+✔ reagendamento exige nova confirmação e visita realizada na data adequada (1.7996ms)
+✔ avanços inconsistentes, imóvel não visitado e ciclo simultâneo são bloqueados (0.9886ms)
+✔ encerramento manual preserva histórico e impede expiração posterior (3.255ms)
+✔ dois atendimentos para o mesmo cliente podem negociar imóveis diferentes (0.7563ms)
+✔ valores, autores e campos vazios são validados (1.1754ms)
+✔ contratos exigem ficha e anexo do ciclo atual, com conteúdo persistível (2.4404ms)
+✔ indicadores contam ciclos encerrados mesmo quando novo ciclo começa (0.9821ms)
+✔ demonstração compara João e Ana com o mesmo início e prazo, preservando os dois aceites de Ana (1.7232ms)
+✔ logs registram relógio simulado, condições, resultado, alterações e IDs realmente criados (1.6232ms)
+✔ HTTP serve interface, módulos e dados reais, sem expor armazenamento (114.9905ms)
+✔ simulador HTTP persiste alterações e dados sobrevivem a nova instância do servidor (61.7233ms)
+✔ CLI e HTTP compartilham o mesmo arquivo e preservam idempotência entre processos (221.0067ms)
+✔ transações concorrentes não perdem eventos; falha não grava alteração parcial (457.7871ms)
+✔ revisão antiga recebe 409 sem aplicar alteração (41.6065ms)
+✔ API valida origem, JSON, datas e ação indevida (34.2046ms)
+✔ upload, download e encaminhamento funcionam de ponta a ponta (66.8692ms)
+✔ notificação interna pode ser lida; mensagem externa permanece pendente (59.8926ms)
+✔ restauração guarda backup e recupera cenários e referência originais (33.3181ms)
+✔ arquivo corrompido não é substituído silenciosamente (14.0394ms)
+✔ aceite e expiração concorrentes convergem para um estado consistente (65.127ms)
+✔ restauração HTTP recupera cenários, salva backup exato e rejeita revisão antiga (83.627ms)
+✔ roteiro HTTP completo persiste aviso, expiração, acordo protegido e repetição sem eventos duplicados (97.059ms)
+ℹ tests 37
+ℹ suites 0
+ℹ pass 37
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1522.831

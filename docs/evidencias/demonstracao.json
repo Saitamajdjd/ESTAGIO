@@ -1,0 +1,1576 @@
+{
+  "recordedAt": "2026-10-25T23:17:22.627Z",
+  "referenceDate": "2026-11-03",
+  "runs": [
+    {
+      "id": "run-6eeb53cf-aad8-4d5c-bf4e-bbe1b13563d1",
+      "date": "2026-11-02",
+      "previousDate": "2026-10-25",
+      "source": "simulator",
+      "simulatedAt": "2026-11-02T00:00:00.000Z",
+      "recordedAt": "2026-10-25T23:17:21.513Z",
+      "results": [
+        {
+          "cycleId": "cycle-eec61d3b-7246-4546-8e09-21e723fba3f9",
+          "dealId": "deal-d09d24f8-4d41-4445-a223-e3c6b5b1295a",
+          "code": "LOC-1001",
+          "clientName": "João Silva",
+          "propertyId": "house-2055",
+          "daysRemaining": 1,
+          "conditions": {
+            "started": true,
+            "active": true,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": true,
+            "deadlineReached": false,
+            "warningExists": false
+          },
+          "actions": [
+            "Aviso interno de prazo próximo gerado para o consultor."
+          ],
+          "outcome": "warning-created",
+          "before": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "house-2055",
+            "visit": {
+              "propertyId": "house-2055",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "house-2055",
+            "visit": {
+              "propertyId": "house-2055",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "changes": [],
+          "eventIds": [
+            "evt-a07f0bc8-66b1-4a3a-b72e-73c587fa2a67"
+          ],
+          "notificationIds": [
+            "notification-1acf6d3c-10e7-4dec-ad59-7a351182c8d1"
+          ]
+        },
+        {
+          "cycleId": "cycle-218753fb-ba0f-4e28-b6f3-0dfd6cf178ca",
+          "dealId": "deal-090225cf-001f-4065-9650-093db4019711",
+          "code": "LOC-1002",
+          "clientName": "Mariana Santos",
+          "propertyId": "apartment-301",
+          "daysRemaining": -7,
+          "conditions": {
+            "started": true,
+            "active": true,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [
+            "Ciclo encerrado como Prazo expirado.",
+            "Mensagem ao proprietário gerada e pendente de envio.",
+            "Atendimento retornou para Envio de imóveis."
+          ],
+          "outcome": "expired",
+          "before": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-10-26",
+            "currentProposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "apartment-301",
+            "visit": {
+              "propertyId": "apartment-301",
+              "date": "2026-10-12",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-12",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-02",
+            "deadline": "2026-10-26",
+            "currentProposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [
+            {
+              "field": "status",
+              "before": "open",
+              "after": "expired"
+            },
+            {
+              "field": "stage",
+              "before": "negotiation",
+              "after": "search"
+            },
+            {
+              "field": "endedOn",
+              "before": null,
+              "after": "2026-11-02"
+            },
+            {
+              "field": "proposalStatus",
+              "before": "pending",
+              "after": "expired"
+            },
+            {
+              "field": "selectedPropertyId",
+              "before": "apartment-301",
+              "after": null
+            },
+            {
+              "field": "visit",
+              "before": {
+                "propertyId": "apartment-301",
+                "date": "2026-10-12",
+                "time": "10:00",
+                "status": "completed",
+                "attempts": [
+                  {
+                    "date": "2026-10-12",
+                    "time": "10:00"
+                  }
+                ]
+              },
+              "after": null
+            }
+          ],
+          "eventIds": [
+            "evt-578aedbd-cacf-4538-9e50-8112cfb6400f",
+            "evt-23d4daed-b3af-45bc-95fb-90e2360f0af0",
+            "evt-b7331723-93f1-465d-8609-fa8af856f6bf",
+            "evt-89153fc4-7337-465b-8344-64d6355c3648"
+          ],
+          "notificationIds": [
+            "notification-11ab332b-2f55-4b14-9f30-1fc1364df217"
+          ]
+        },
+        {
+          "cycleId": "cycle-6c0286b0-8374-44ac-b485-13974416c958",
+          "dealId": "deal-6f03e4c6-13b1-4189-baec-c6390370fc0b",
+          "code": "LOC-1003",
+          "clientName": "Pedro Oliveira",
+          "propertyId": "house-1020",
+          "daysRemaining": -8,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "already-closed",
+          "before": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-10-25",
+            "deadline": "2026-10-25",
+            "currentProposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-10-25",
+            "deadline": "2026-10-25",
+            "currentProposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-348927d3-1120-459b-bd05-d152179d2ec4",
+          "dealId": "deal-c5e663e0-845a-434c-9f1f-c1d3823edeed",
+          "code": "LOC-1004",
+          "clientName": "Ana Costa",
+          "propertyId": "apartment-804",
+          "daysRemaining": 1,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": true,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": true,
+            "oneDayLeft": true,
+            "deadlineReached": false,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "agreement-preserved",
+          "before": {
+            "status": "agreed",
+            "stage": "meeting",
+            "endedOn": "2026-10-22",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+            "proposalStatus": "accepted",
+            "selectedPropertyId": "apartment-804",
+            "visit": {
+              "propertyId": "apartment-804",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "agreed",
+            "stage": "meeting",
+            "endedOn": "2026-10-22",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+            "proposalStatus": "accepted",
+            "selectedPropertyId": "apartment-804",
+            "visit": {
+              "propertyId": "apartment-804",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-0de60d3a-938a-4555-9bcb-b5d3658bff1a",
+          "dealId": "deal-30e57732-631f-4389-9b7a-35117e9677fa",
+          "code": "LOC-1005",
+          "clientName": "Lucas Ferreira",
+          "propertyId": "studio-112",
+          "daysRemaining": 1,
+          "conditions": {
+            "started": true,
+            "active": true,
+            "agreement": false,
+            "clientAcceptedCurrent": false,
+            "ownerAcceptedCurrent": true,
+            "oneDayLeft": true,
+            "deadlineReached": false,
+            "warningExists": false
+          },
+          "actions": [
+            "Aviso interno de prazo próximo gerado para o consultor."
+          ],
+          "outcome": "warning-created",
+          "before": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "studio-112",
+            "visit": {
+              "propertyId": "studio-112",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "studio-112",
+            "visit": {
+              "propertyId": "studio-112",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "changes": [],
+          "eventIds": [
+            "evt-414a2303-23a3-464d-bc65-87fb392025dd"
+          ],
+          "notificationIds": [
+            "notification-31ba8ce9-434e-46d1-859d-b9c7a0987cf5"
+          ]
+        }
+      ],
+      "eventsCreated": 6,
+      "notificationsCreated": 3,
+      "actionCount": 5
+    },
+    {
+      "id": "run-cc11a163-58c5-4277-acfa-5f73ae945431",
+      "date": "2026-11-02",
+      "previousDate": "2026-11-02",
+      "source": "simulator",
+      "simulatedAt": "2026-11-02T00:00:00.000Z",
+      "recordedAt": "2026-10-25T23:17:21.703Z",
+      "results": [
+        {
+          "cycleId": "cycle-eec61d3b-7246-4546-8e09-21e723fba3f9",
+          "dealId": "deal-d09d24f8-4d41-4445-a223-e3c6b5b1295a",
+          "code": "LOC-1001",
+          "clientName": "João Silva",
+          "propertyId": "house-2055",
+          "daysRemaining": 1,
+          "conditions": {
+            "started": true,
+            "active": true,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": true,
+            "deadlineReached": false,
+            "warningExists": true
+          },
+          "actions": [],
+          "outcome": "warning-already-exists",
+          "before": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "house-2055",
+            "visit": {
+              "propertyId": "house-2055",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "house-2055",
+            "visit": {
+              "propertyId": "house-2055",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-218753fb-ba0f-4e28-b6f3-0dfd6cf178ca",
+          "dealId": "deal-090225cf-001f-4065-9650-093db4019711",
+          "code": "LOC-1002",
+          "clientName": "Mariana Santos",
+          "propertyId": "apartment-301",
+          "daysRemaining": -7,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "already-closed",
+          "before": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-02",
+            "deadline": "2026-10-26",
+            "currentProposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-02",
+            "deadline": "2026-10-26",
+            "currentProposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-6c0286b0-8374-44ac-b485-13974416c958",
+          "dealId": "deal-6f03e4c6-13b1-4189-baec-c6390370fc0b",
+          "code": "LOC-1003",
+          "clientName": "Pedro Oliveira",
+          "propertyId": "house-1020",
+          "daysRemaining": -8,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "already-closed",
+          "before": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-10-25",
+            "deadline": "2026-10-25",
+            "currentProposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-10-25",
+            "deadline": "2026-10-25",
+            "currentProposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-348927d3-1120-459b-bd05-d152179d2ec4",
+          "dealId": "deal-c5e663e0-845a-434c-9f1f-c1d3823edeed",
+          "code": "LOC-1004",
+          "clientName": "Ana Costa",
+          "propertyId": "apartment-804",
+          "daysRemaining": 1,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": true,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": true,
+            "oneDayLeft": true,
+            "deadlineReached": false,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "agreement-preserved",
+          "before": {
+            "status": "agreed",
+            "stage": "meeting",
+            "endedOn": "2026-10-22",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+            "proposalStatus": "accepted",
+            "selectedPropertyId": "apartment-804",
+            "visit": {
+              "propertyId": "apartment-804",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "agreed",
+            "stage": "meeting",
+            "endedOn": "2026-10-22",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+            "proposalStatus": "accepted",
+            "selectedPropertyId": "apartment-804",
+            "visit": {
+              "propertyId": "apartment-804",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-0de60d3a-938a-4555-9bcb-b5d3658bff1a",
+          "dealId": "deal-30e57732-631f-4389-9b7a-35117e9677fa",
+          "code": "LOC-1005",
+          "clientName": "Lucas Ferreira",
+          "propertyId": "studio-112",
+          "daysRemaining": 1,
+          "conditions": {
+            "started": true,
+            "active": true,
+            "agreement": false,
+            "clientAcceptedCurrent": false,
+            "ownerAcceptedCurrent": true,
+            "oneDayLeft": true,
+            "deadlineReached": false,
+            "warningExists": true
+          },
+          "actions": [],
+          "outcome": "warning-already-exists",
+          "before": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "studio-112",
+            "visit": {
+              "propertyId": "studio-112",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "studio-112",
+            "visit": {
+              "propertyId": "studio-112",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        }
+      ],
+      "eventsCreated": 0,
+      "notificationsCreated": 0,
+      "actionCount": 0
+    },
+    {
+      "id": "run-bfa29535-7b15-4e86-97c8-454c55559618",
+      "date": "2026-11-03",
+      "previousDate": "2026-11-02",
+      "source": "simulator",
+      "simulatedAt": "2026-11-03T00:00:00.000Z",
+      "recordedAt": "2026-10-25T23:17:21.835Z",
+      "results": [
+        {
+          "cycleId": "cycle-eec61d3b-7246-4546-8e09-21e723fba3f9",
+          "dealId": "deal-d09d24f8-4d41-4445-a223-e3c6b5b1295a",
+          "code": "LOC-1001",
+          "clientName": "João Silva",
+          "propertyId": "house-2055",
+          "daysRemaining": 0,
+          "conditions": {
+            "started": true,
+            "active": true,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": true
+          },
+          "actions": [
+            "Ciclo encerrado como Prazo expirado.",
+            "Mensagem ao proprietário gerada e pendente de envio.",
+            "Atendimento retornou para Envio de imóveis."
+          ],
+          "outcome": "expired",
+          "before": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "house-2055",
+            "visit": {
+              "propertyId": "house-2055",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-03",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [
+            {
+              "field": "status",
+              "before": "open",
+              "after": "expired"
+            },
+            {
+              "field": "stage",
+              "before": "negotiation",
+              "after": "search"
+            },
+            {
+              "field": "endedOn",
+              "before": null,
+              "after": "2026-11-03"
+            },
+            {
+              "field": "proposalStatus",
+              "before": "pending",
+              "after": "expired"
+            },
+            {
+              "field": "selectedPropertyId",
+              "before": "house-2055",
+              "after": null
+            },
+            {
+              "field": "visit",
+              "before": {
+                "propertyId": "house-2055",
+                "date": "2026-10-20",
+                "time": "10:00",
+                "status": "completed",
+                "attempts": [
+                  {
+                    "date": "2026-10-20",
+                    "time": "10:00"
+                  }
+                ]
+              },
+              "after": null
+            }
+          ],
+          "eventIds": [
+            "evt-8663533e-83b4-4cda-b0fb-b792d422785d",
+            "evt-6d4bbfef-087e-44f9-a509-56c4f957b7db",
+            "evt-35f38260-ba84-4b82-add8-eb47c5957459",
+            "evt-a71e62c9-dfd6-4e83-af24-aee08f306f27"
+          ],
+          "notificationIds": [
+            "notification-d0fcb3a9-cdc6-4db1-839a-42eca656a8ba"
+          ]
+        },
+        {
+          "cycleId": "cycle-218753fb-ba0f-4e28-b6f3-0dfd6cf178ca",
+          "dealId": "deal-090225cf-001f-4065-9650-093db4019711",
+          "code": "LOC-1002",
+          "clientName": "Mariana Santos",
+          "propertyId": "apartment-301",
+          "daysRemaining": -8,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "already-closed",
+          "before": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-02",
+            "deadline": "2026-10-26",
+            "currentProposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-02",
+            "deadline": "2026-10-26",
+            "currentProposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-6c0286b0-8374-44ac-b485-13974416c958",
+          "dealId": "deal-6f03e4c6-13b1-4189-baec-c6390370fc0b",
+          "code": "LOC-1003",
+          "clientName": "Pedro Oliveira",
+          "propertyId": "house-1020",
+          "daysRemaining": -9,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "already-closed",
+          "before": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-10-25",
+            "deadline": "2026-10-25",
+            "currentProposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-10-25",
+            "deadline": "2026-10-25",
+            "currentProposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-348927d3-1120-459b-bd05-d152179d2ec4",
+          "dealId": "deal-c5e663e0-845a-434c-9f1f-c1d3823edeed",
+          "code": "LOC-1004",
+          "clientName": "Ana Costa",
+          "propertyId": "apartment-804",
+          "daysRemaining": 0,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": true,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": true,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "agreement-preserved",
+          "before": {
+            "status": "agreed",
+            "stage": "meeting",
+            "endedOn": "2026-10-22",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+            "proposalStatus": "accepted",
+            "selectedPropertyId": "apartment-804",
+            "visit": {
+              "propertyId": "apartment-804",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "agreed",
+            "stage": "meeting",
+            "endedOn": "2026-10-22",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+            "proposalStatus": "accepted",
+            "selectedPropertyId": "apartment-804",
+            "visit": {
+              "propertyId": "apartment-804",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-0de60d3a-938a-4555-9bcb-b5d3658bff1a",
+          "dealId": "deal-30e57732-631f-4389-9b7a-35117e9677fa",
+          "code": "LOC-1005",
+          "clientName": "Lucas Ferreira",
+          "propertyId": "studio-112",
+          "daysRemaining": 0,
+          "conditions": {
+            "started": true,
+            "active": true,
+            "agreement": false,
+            "clientAcceptedCurrent": false,
+            "ownerAcceptedCurrent": true,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": true
+          },
+          "actions": [
+            "Ciclo encerrado como Prazo expirado.",
+            "Mensagem ao proprietário gerada e pendente de envio.",
+            "Atendimento retornou para Envio de imóveis."
+          ],
+          "outcome": "expired",
+          "before": {
+            "status": "open",
+            "stage": "negotiation",
+            "endedOn": null,
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+            "proposalStatus": "pending",
+            "selectedPropertyId": "studio-112",
+            "visit": {
+              "propertyId": "studio-112",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-03",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [
+            {
+              "field": "status",
+              "before": "open",
+              "after": "expired"
+            },
+            {
+              "field": "stage",
+              "before": "negotiation",
+              "after": "search"
+            },
+            {
+              "field": "endedOn",
+              "before": null,
+              "after": "2026-11-03"
+            },
+            {
+              "field": "proposalStatus",
+              "before": "pending",
+              "after": "expired"
+            },
+            {
+              "field": "selectedPropertyId",
+              "before": "studio-112",
+              "after": null
+            },
+            {
+              "field": "visit",
+              "before": {
+                "propertyId": "studio-112",
+                "date": "2026-10-20",
+                "time": "10:00",
+                "status": "completed",
+                "attempts": [
+                  {
+                    "date": "2026-10-20",
+                    "time": "10:00"
+                  }
+                ]
+              },
+              "after": null
+            }
+          ],
+          "eventIds": [
+            "evt-f8719ad5-230d-450e-beab-0b716a230cf1",
+            "evt-705d4153-821a-45af-9384-7a8eb34f3254",
+            "evt-ff16c3d1-d541-4b6f-b4da-c727c7256898",
+            "evt-98bd855f-ed88-4666-9afb-2e63d42e4b60"
+          ],
+          "notificationIds": [
+            "notification-5d0a4117-82a6-4a97-b6fc-be9948cad439"
+          ]
+        }
+      ],
+      "eventsCreated": 8,
+      "notificationsCreated": 2,
+      "actionCount": 6
+    },
+    {
+      "id": "run-24f7cd1f-0226-4d36-9667-54ac0ecfd15e",
+      "date": "2026-11-03",
+      "previousDate": "2026-11-03",
+      "source": "simulator",
+      "simulatedAt": "2026-11-03T00:00:00.000Z",
+      "recordedAt": "2026-10-25T23:17:22.019Z",
+      "results": [
+        {
+          "cycleId": "cycle-eec61d3b-7246-4546-8e09-21e723fba3f9",
+          "dealId": "deal-d09d24f8-4d41-4445-a223-e3c6b5b1295a",
+          "code": "LOC-1001",
+          "clientName": "João Silva",
+          "propertyId": "house-2055",
+          "daysRemaining": 0,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": true
+          },
+          "actions": [],
+          "outcome": "already-closed",
+          "before": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-03",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-03",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-218753fb-ba0f-4e28-b6f3-0dfd6cf178ca",
+          "dealId": "deal-090225cf-001f-4065-9650-093db4019711",
+          "code": "LOC-1002",
+          "clientName": "Mariana Santos",
+          "propertyId": "apartment-301",
+          "daysRemaining": -8,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "already-closed",
+          "before": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-02",
+            "deadline": "2026-10-26",
+            "currentProposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-02",
+            "deadline": "2026-10-26",
+            "currentProposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-6c0286b0-8374-44ac-b485-13974416c958",
+          "dealId": "deal-6f03e4c6-13b1-4189-baec-c6390370fc0b",
+          "code": "LOC-1003",
+          "clientName": "Pedro Oliveira",
+          "propertyId": "house-1020",
+          "daysRemaining": -9,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": false,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": false,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "already-closed",
+          "before": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-10-25",
+            "deadline": "2026-10-25",
+            "currentProposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-10-25",
+            "deadline": "2026-10-25",
+            "currentProposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-348927d3-1120-459b-bd05-d152179d2ec4",
+          "dealId": "deal-c5e663e0-845a-434c-9f1f-c1d3823edeed",
+          "code": "LOC-1004",
+          "clientName": "Ana Costa",
+          "propertyId": "apartment-804",
+          "daysRemaining": 0,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": true,
+            "clientAcceptedCurrent": true,
+            "ownerAcceptedCurrent": true,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": false
+          },
+          "actions": [],
+          "outcome": "agreement-preserved",
+          "before": {
+            "status": "agreed",
+            "stage": "meeting",
+            "endedOn": "2026-10-22",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+            "proposalStatus": "accepted",
+            "selectedPropertyId": "apartment-804",
+            "visit": {
+              "propertyId": "apartment-804",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "after": {
+            "status": "agreed",
+            "stage": "meeting",
+            "endedOn": "2026-10-22",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+            "proposalStatus": "accepted",
+            "selectedPropertyId": "apartment-804",
+            "visit": {
+              "propertyId": "apartment-804",
+              "date": "2026-10-20",
+              "time": "10:00",
+              "status": "completed",
+              "attempts": [
+                {
+                  "date": "2026-10-20",
+                  "time": "10:00"
+                }
+              ]
+            }
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        },
+        {
+          "cycleId": "cycle-0de60d3a-938a-4555-9bcb-b5d3658bff1a",
+          "dealId": "deal-30e57732-631f-4389-9b7a-35117e9677fa",
+          "code": "LOC-1005",
+          "clientName": "Lucas Ferreira",
+          "propertyId": "studio-112",
+          "daysRemaining": 0,
+          "conditions": {
+            "started": true,
+            "active": false,
+            "agreement": false,
+            "clientAcceptedCurrent": false,
+            "ownerAcceptedCurrent": true,
+            "oneDayLeft": false,
+            "deadlineReached": true,
+            "warningExists": true
+          },
+          "actions": [],
+          "outcome": "already-closed",
+          "before": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-03",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "after": {
+            "status": "expired",
+            "stage": "search",
+            "endedOn": "2026-11-03",
+            "deadline": "2026-11-03",
+            "currentProposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+            "proposalStatus": "expired",
+            "selectedPropertyId": null,
+            "visit": null
+          },
+          "changes": [],
+          "eventIds": [],
+          "notificationIds": []
+        }
+      ],
+      "eventsCreated": 0,
+      "notificationsCreated": 0,
+      "actionCount": 0
+    }
+  ],
+  "deals": [
+    {
+      "code": "LOC-1001",
+      "clientName": "João Silva",
+      "stage": "search",
+      "cycle": {
+        "id": "cycle-eec61d3b-7246-4546-8e09-21e723fba3f9",
+        "dealId": "deal-d09d24f8-4d41-4445-a223-e3c6b5b1295a",
+        "propertyId": "house-2055",
+        "number": 1,
+        "firstProposalDate": "2026-10-20",
+        "deadline": "2026-11-03",
+        "status": "expired",
+        "proposals": [
+          {
+            "id": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+            "amountCents": 195000,
+            "author": "client",
+            "date": "2026-10-20",
+            "status": "expired",
+            "acceptances": [
+              {
+                "party": "client",
+                "date": "2026-10-20",
+                "proposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+                "implicit": true
+              }
+            ]
+          }
+        ],
+        "currentProposalId": "proposal-3acaddd2-f607-4c6f-bc0c-130ab26fcdae",
+        "endedOn": "2026-11-03",
+        "endReason": "Prazo máximo de 14 dias atingido sem acordo."
+      }
+    },
+    {
+      "code": "LOC-1002",
+      "clientName": "Mariana Santos",
+      "stage": "search",
+      "cycle": {
+        "id": "cycle-218753fb-ba0f-4e28-b6f3-0dfd6cf178ca",
+        "dealId": "deal-090225cf-001f-4065-9650-093db4019711",
+        "propertyId": "apartment-301",
+        "number": 1,
+        "firstProposalDate": "2026-10-12",
+        "deadline": "2026-10-26",
+        "status": "expired",
+        "proposals": [
+          {
+            "id": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+            "amountCents": 265000,
+            "author": "client",
+            "date": "2026-10-12",
+            "status": "expired",
+            "acceptances": [
+              {
+                "party": "client",
+                "date": "2026-10-12",
+                "proposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+                "implicit": true
+              }
+            ]
+          }
+        ],
+        "currentProposalId": "proposal-6ff9a64a-cdf0-4ee8-beea-68aa0494bbe3",
+        "endedOn": "2026-11-02",
+        "endReason": "Prazo máximo de 14 dias atingido sem acordo."
+      }
+    },
+    {
+      "code": "LOC-1003",
+      "clientName": "Pedro Oliveira",
+      "stage": "search",
+      "cycle": {
+        "id": "cycle-6c0286b0-8374-44ac-b485-13974416c958",
+        "dealId": "deal-6f03e4c6-13b1-4189-baec-c6390370fc0b",
+        "propertyId": "house-1020",
+        "number": 1,
+        "firstProposalDate": "2026-10-11",
+        "deadline": "2026-10-25",
+        "status": "expired",
+        "proposals": [
+          {
+            "id": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+            "amountCents": 300000,
+            "author": "client",
+            "date": "2026-10-11",
+            "status": "expired",
+            "acceptances": [
+              {
+                "party": "client",
+                "date": "2026-10-11",
+                "proposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+                "implicit": true
+              }
+            ]
+          }
+        ],
+        "currentProposalId": "proposal-ebe817f4-b4ea-486f-835e-fa681a20e231",
+        "endedOn": "2026-10-25",
+        "endReason": "Prazo máximo de 14 dias atingido sem acordo."
+      }
+    },
+    {
+      "code": "LOC-1004",
+      "clientName": "Ana Costa",
+      "stage": "meeting",
+      "cycle": {
+        "id": "cycle-348927d3-1120-459b-bd05-d152179d2ec4",
+        "dealId": "deal-c5e663e0-845a-434c-9f1f-c1d3823edeed",
+        "propertyId": "apartment-804",
+        "number": 1,
+        "firstProposalDate": "2026-10-20",
+        "deadline": "2026-11-03",
+        "status": "agreed",
+        "proposals": [
+          {
+            "id": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+            "amountCents": 240000,
+            "author": "client",
+            "date": "2026-10-20",
+            "status": "accepted",
+            "acceptances": [
+              {
+                "party": "client",
+                "date": "2026-10-20",
+                "proposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+                "implicit": true
+              },
+              {
+                "party": "owner",
+                "date": "2026-10-22",
+                "proposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+                "implicit": false
+              }
+            ]
+          }
+        ],
+        "currentProposalId": "proposal-1c933f8e-6615-45f3-be1a-ee46cd24e5c6",
+        "endedOn": "2026-10-22",
+        "endReason": "Ambas as partes aceitaram a mesma proposta dentro do prazo."
+      }
+    },
+    {
+      "code": "LOC-1005",
+      "clientName": "Lucas Ferreira",
+      "stage": "search",
+      "cycle": {
+        "id": "cycle-0de60d3a-938a-4555-9bcb-b5d3658bff1a",
+        "dealId": "deal-30e57732-631f-4389-9b7a-35117e9677fa",
+        "propertyId": "studio-112",
+        "number": 1,
+        "firstProposalDate": "2026-10-20",
+        "deadline": "2026-11-03",
+        "status": "expired",
+        "proposals": [
+          {
+            "id": "proposal-039e4b90-65a4-465e-9497-5c93ad92b2ab",
+            "amountCents": 165000,
+            "author": "client",
+            "date": "2026-10-20",
+            "status": "superseded",
+            "acceptances": [
+              {
+                "party": "client",
+                "date": "2026-10-20",
+                "proposalId": "proposal-039e4b90-65a4-465e-9497-5c93ad92b2ab",
+                "implicit": true
+              }
+            ]
+          },
+          {
+            "id": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+            "amountCents": 175000,
+            "author": "owner",
+            "date": "2026-10-22",
+            "status": "expired",
+            "acceptances": [
+              {
+                "party": "owner",
+                "date": "2026-10-22",
+                "proposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+                "implicit": true
+              }
+            ]
+          }
+        ],
+        "currentProposalId": "proposal-6a8afca9-8d4e-4423-8647-1f9282e57971",
+        "endedOn": "2026-11-03",
+        "endReason": "Prazo máximo de 14 dias atingido sem acordo."
+      }
+    }
+  ],
+  "notifications": [
+    {
+      "id": "notification-1ec03083-ded0-4de8-b0b7-bac674080921",
+      "key": "cycle-6c0286b0-8374-44ac-b485-13974416c958:deadline-expired",
+      "cycleId": "cycle-6c0286b0-8374-44ac-b485-13974416c958",
+      "dealId": "deal-6f03e4c6-13b1-4189-baec-c6390370fc0b",
+      "kind": "deadline-expired",
+      "recipient": "owner",
+      "recipientName": "Roberto Dias",
+      "status": "pending",
+      "date": "2026-10-25",
+      "recordedAt": "2026-10-25T23:17:21.221Z",
+      "message": "Olá, Roberto Dias. O prazo máximo de 14 dias da negociação de Casa 1020 terminou sem acordo. O ciclo foi encerrado e o atendimento retornou à busca de outros imóveis."
+    },
+    {
+      "id": "notification-1acf6d3c-10e7-4dec-ad59-7a351182c8d1",
+      "key": "cycle-eec61d3b-7246-4546-8e09-21e723fba3f9:deadline-warning",
+      "cycleId": "cycle-eec61d3b-7246-4546-8e09-21e723fba3f9",
+      "dealId": "deal-d09d24f8-4d41-4445-a223-e3c6b5b1295a",
+      "kind": "deadline-warning",
+      "recipient": "consultant",
+      "recipientName": "Marina Costa",
+      "status": "pending",
+      "date": "2026-11-02",
+      "recordedAt": "2026-10-25T23:17:21.512Z",
+      "message": "A negociação de Casa 2055 tem apenas 1 dia restante. Verifique os aceites da proposta atual antes do prazo final."
+    },
+    {
+      "id": "notification-11ab332b-2f55-4b14-9f30-1fc1364df217",
+      "key": "cycle-218753fb-ba0f-4e28-b6f3-0dfd6cf178ca:deadline-expired",
+      "cycleId": "cycle-218753fb-ba0f-4e28-b6f3-0dfd6cf178ca",
+      "dealId": "deal-090225cf-001f-4065-9650-093db4019711",
+      "kind": "deadline-expired",
+      "recipient": "owner",
+      "recipientName": "Helena Ribeiro",
+      "status": "pending",
+      "date": "2026-11-02",
+      "recordedAt": "2026-10-25T23:17:21.512Z",
+      "message": "Olá, Helena Ribeiro. O prazo máximo de 14 dias da negociação de Apartamento 301 terminou sem acordo. O ciclo foi encerrado e o atendimento retornou à busca de outros imóveis."
+    },
+    {
+      "id": "notification-31ba8ce9-434e-46d1-859d-b9c7a0987cf5",
+      "key": "cycle-0de60d3a-938a-4555-9bcb-b5d3658bff1a:deadline-warning",
+      "cycleId": "cycle-0de60d3a-938a-4555-9bcb-b5d3658bff1a",
+      "dealId": "deal-30e57732-631f-4389-9b7a-35117e9677fa",
+      "kind": "deadline-warning",
+      "recipient": "consultant",
+      "recipientName": "Marina Costa",
+      "status": "pending",
+      "date": "2026-11-02",
+      "recordedAt": "2026-10-25T23:17:21.512Z",
+      "message": "A negociação de Studio 112 tem apenas 1 dia restante. Verifique os aceites da proposta atual antes do prazo final."
+    },
+    {
+      "id": "notification-d0fcb3a9-cdc6-4db1-839a-42eca656a8ba",
+      "key": "cycle-eec61d3b-7246-4546-8e09-21e723fba3f9:deadline-expired",
+      "cycleId": "cycle-eec61d3b-7246-4546-8e09-21e723fba3f9",
+      "dealId": "deal-d09d24f8-4d41-4445-a223-e3c6b5b1295a",
+      "kind": "deadline-expired",
+      "recipient": "owner",
+      "recipientName": "Carlos Almeida",
+      "status": "pending",
+      "date": "2026-11-03",
+      "recordedAt": "2026-10-25T23:17:21.834Z",
+      "message": "Olá, Carlos Almeida. O prazo máximo de 14 dias da negociação de Casa 2055 terminou sem acordo. O ciclo foi encerrado e o atendimento retornou à busca de outros imóveis."
+    },
+    {
+      "id": "notification-5d0a4117-82a6-4a97-b6fc-be9948cad439",
+      "key": "cycle-0de60d3a-938a-4555-9bcb-b5d3658bff1a:deadline-expired",
+      "cycleId": "cycle-0de60d3a-938a-4555-9bcb-b5d3658bff1a",
+      "dealId": "deal-30e57732-631f-4389-9b7a-35117e9677fa",
+      "kind": "deadline-expired",
+      "recipient": "owner",
+      "recipientName": "Paulo Mendes",
+      "status": "pending",
+      "date": "2026-11-03",
+      "recordedAt": "2026-10-25T23:17:21.834Z",
+      "message": "Olá, Paulo Mendes. O prazo máximo de 14 dias da negociação de Studio 112 terminou sem acordo. O ciclo foi encerrado e o atendimento retornou à busca de outros imóveis."
+    }
+  ],
+  "repetitionVerified": {
+    "warningEventsUnchanged": true,
+    "expirationEventsUnchanged": true,
+    "notificationsUnchanged": true
+  }
+}

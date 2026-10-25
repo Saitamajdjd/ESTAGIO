@@ -1,0 +1,17 @@
+{
+  "name": "locaflux-case-nia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demonstração local de automação do processo de locação — case NIA",
+  "type": "module",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "test:browser": "node tests/browser-check.mjs",
+    "verify": "node src/cli.js verify",
+    "reset": "node src/cli.js reset",
+    "check": "node --check public/app.js && node --check src/server.js"
+  }
+}
